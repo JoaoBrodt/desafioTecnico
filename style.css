@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap");
+
+:root {
+  --fonte-padrao: "Londrina Solid", cursive;
+  --azul-botao: #2cc6d0;
+  --cinza-botao: #c8c8c8;
+  --bg-cor: #c8c8c8;
+  --cursor: default;
+}
+
+.habilitado {
+  --bg-cor: #2cc6d0;
+  --cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.livro {
+  width: 115px;
+  height: 130px;
+  margin-bottom: 24px;
+  margin-left: 1em;
+}
+
+h1 {
+  font-family: var(--fonte-padrao);
+  font-size: 42px;
+  font-weight: 400;
+  word-wrap: break-word;
+  width: 300px;
+}
+.container__estrela li {
+  display: inline-block;
+  margin-top: 24px;
+  height: 30px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.container__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.button__avancar {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  background: var(--bg-cor);
+  padding: 10px 24px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 5px var(--cinza-botao);
+  cursor: var(--cursor);
+}
+.pular {
+  background: none;
+  color: var(--azul-botao);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 620px) {
+  h1 {
+    font-size: 34px;
+    width: 220px;
+  }
+  .livro {
+    height: 115px;
+    width: 100px;
+  }
+  .container__buttons {
+    margin-top: 180px;
+  }
+}

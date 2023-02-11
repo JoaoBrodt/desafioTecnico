@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/livro.png" class="livro" alt="" />
+      <h1>Como foi a ajuda do tutor?</h1>
+      <ul class="container__estrela">
+        <li>
+          <img
+            onclick="pintaEstrela(estrela_1)"
+            src="./images/estrela_vazia.svg"
+            id="estrela-1"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            onclick="pintaEstrela(estrela_2)"
+            src="./images/estrela_vazia.svg"
+            id="estrela-2"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            onclick="pintaEstrela(estrela_3)"
+            src="./images/estrela_vazia.svg"
+            id="estrela-3"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            onclick="pintaEstrela(estrela_4)"
+            src="./images/estrela_vazia.svg"
+            id="estrela-4"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            onclick="pintaEstrela(estrela_5)"
+            src="./images/estrela_vazia.svg"
+            id="estrela-5"
+            alt=""
+          />
+        </li>
+      </ul>
+    </div>
+    <div class="container__buttons">
+      <button class="button__avancar pular">Pular</button>
+      <button class="button__avancar" id="botao" disabled>Confirmar</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
