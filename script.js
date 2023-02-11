@@ -36,5 +36,5 @@ function despintaEstrelas() {
 
 function desbloqueiaBotao() {
   botao.disabled = false;
-  botao.classList.toggle("habilitado");
+  botao.classList.add("habilitado");
 }
